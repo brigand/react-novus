@@ -23,9 +23,10 @@
     "eslint-plugin-jasmine": "^2.0.1",
     "eslint-plugin-jsx-a11y": "^2.2.3",
     "eslint-plugin-react": "^6.6.0",
-    "jest": "^16.0.2",
     "gulp": "^3.9.1",
-    "gulp-eslint": "^3.0.1"
+    "gulp-eslint": "^3.0.1",
+    "gulp-webserver": "^0.9.1",
+    "jest": "^16.0.2"
   },
   "repository": {
     "url": "git@github.com:brigand/react-novus.git",

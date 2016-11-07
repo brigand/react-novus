@@ -2,10 +2,10 @@ extends: airbnb
 
 plugins:
   - import
-  - flowtype
   - jasmine
 
 env:
+  browser: true
   node: true
   jest: true
   jasmine: true
@@ -13,3 +13,6 @@ env:
 rules:
   object-curly-spacing: 0
 
+globals:
+  React: true
+  ReactDOM: true
