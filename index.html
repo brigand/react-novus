@@ -1,0 +1,28 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>react-novus</title>
+  <meta name="description" content="choose any combination of tools for your react app and get a custom starter project">
+  <meta name="author" content="brigand">
+</head>
+
+<body>
+  <div id="root"></div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.3.2/react.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.3.2/react-dom.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/0.19.40/system.js"></script>
+  <script>
+    SystemJS.config({
+      baseURL: location.pathname
+        .replace(/index\.html$/g, '')
+        .replace(/\/$/g, '')
+        + '/src/web'
+    });
+
+    SystemJS.import('app.js');
+  </script>
+</body>
+</html>
