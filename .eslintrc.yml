@@ -12,6 +12,9 @@ env:
 
 rules:
   object-curly-spacing: 0
+  quotes: 0
+  arrow-body-style: 0
+  react/forbid-prop-types: 0
 
 globals:
   React: true

@@ -1,6 +1,6 @@
 const h = require('./h.js');
-const Card = require('./Card.js');
+const Main = require('./Main.js');
 
 const root = document.getElementById('root');
 
-ReactDOM.render(h(Card), root);
+ReactDOM.render(h(Main), root);
