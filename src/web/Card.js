@@ -11,12 +11,17 @@ module.exports = class Card extends React.Component {
         h('div.CardHeaderCheckbox', null, this.renderCheckboxContent()),
         h('div.CardHeaderTitle', null, this.props.title),
         h('div.CardHeaderLogo', null, this.renderCardHeaderLogo())
+      ),
+      h('div.CardBody', null,
+        this.props.description
       )
     );
   }
 
   renderCheckboxContent() {
-    return h('div', null, 'check ' + this.props.checked);
+    return this.props.checked
+      ? h('div.CardHeaderCheckboxSelected', null)
+      : h('div.CardHeaderCheckboxEmpty', null);
   }
 
   renderCardHeaderLogo() {

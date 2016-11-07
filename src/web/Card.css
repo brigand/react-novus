@@ -1,0 +1,56 @@
+.Card {
+  background: #fafafa;
+  display: inline-block;
+  cursor: pointer;
+  width: 20em;
+}
+
+.CardHeader {
+  background: var(--background-medium);
+  padding: 0.5em;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.CardHeaderCheckbox {
+}
+.CardHeaderCheckboxEmpty, .CardHeaderCheckboxSelected {
+  width: 1.5em;
+  height: 1.5em;
+  border-radius: 50%;
+  position: relative;
+}
+.CardHeaderCheckboxEmpty {
+  background: #ddd;
+}
+.CardHeaderCheckboxSelected {
+  background: var(--secondary-color);
+}
+
+.CardHeaderCheckboxEmpty::after, .CardHeaderCheckboxSelected::after {
+  content: '√';
+  font-size: 1.5em;
+  font-weight: 900;
+  position: absolute;
+  top: -0.2em;
+  left: 0.2em;
+  color: var(--primary-color);
+  transition: transform 0.23s;
+  transform: scale(0);
+}
+
+.CardHeaderCheckboxSelected::after {
+  transform: scale(1);
+}
+
+.CardHeaderTitle {
+  flex-grow: 1;
+  text-align: center;
+  margin: auto 2em;
+}
+
+.CardHeaderLogo {
+  flex-basis: 1.5em;
+  height: 1.5em;
+}

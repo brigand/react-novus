@@ -1,6 +1,8 @@
 :root {
   --background-color: white;
   --primary-font: #333;
-  --primary-color: red;
-  --secondary-color: blue;
+  --primary-color: #7C216D;
+  --secondary-color: #94A261;
+  --background-light: #ADB299;
+  --background-medium: #949A7F;
 }

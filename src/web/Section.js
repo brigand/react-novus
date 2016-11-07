@@ -7,7 +7,9 @@ module.exports = class Section extends React.Component {
         h('h2', null, this.props.title)
       ),
       h('div.SectionDescription', null, this.props.description),
-      h('div.SectionCards', null, this.props.children)
+      h('div.SectionCards', null, React.Children.map(this.props.children, (child, key) => (
+        h('div.SectionCardWrapper', {key}, child)
+      )))
     );
   }
 };
