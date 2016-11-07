@@ -1,0 +1,15 @@
+extends: airbnb
+
+plugins:
+  - import
+  - flowtype
+  - jasmine
+
+env:
+  node: true
+  jest: true
+  jasmine: true
+
+rules:
+  object-curly-spacing: 0
+
