@@ -54,3 +54,7 @@
   flex-basis: 1.5em;
   height: 1.5em;
 }
+
+.CardLogo {
+  width: 20em;
+}

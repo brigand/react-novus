@@ -9,6 +9,7 @@ module.exports = class Cards extends React.Component {
       return h(Card, {
         title,
         description,
+        id: value,
         checked: this.props.value[key] === value,
         onClick: () => {
           const obj = Object.assign(

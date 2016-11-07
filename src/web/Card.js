@@ -1,4 +1,5 @@
 const h = require('./h.js');
+const constants = require('./constants.js');
 
 module.exports = class Card extends React.Component {
   render() {
@@ -13,6 +14,7 @@ module.exports = class Card extends React.Component {
         h('div.CardHeaderLogo', null, this.renderCardHeaderLogo())
       ),
       h('div.CardBody', null,
+        h('img.CardLogo', {src: constants.logos[this.props.id]}),
         this.props.description
       )
     );
