@@ -7,13 +7,19 @@ module.exports = class Card extends React.Component {
       this.props.onClick();
     };
 
+    const logoImage = constants.logos[this.props.id];
+
     return h('div.Card', {onClick},
       h('div.CardHeader', null,
         h('div.CardHeaderCheckbox', null, this.renderCheckboxContent()),
         h('div.CardHeaderTitle', null, this.props.title)
       ),
       h('div.CardBody', null,
-        h('img.CardLogo', {src: constants.logos[this.props.id]}),
+        logoImage
+        ? h('img.CardLogo', {src: logoImage})
+        : h('div.CardLogo.CardLogo', null,
+          h('div.CardLogo__Text', null, this.props.title)
+        ),
         this.props.description
       )
     );

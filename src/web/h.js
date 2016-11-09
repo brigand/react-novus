@@ -5,7 +5,7 @@ const h = (selector, props, ...children) => {
   }
 
   const classNames = [];
-  const tagName = selector.replace(/\.([^.]+)/, (match, className) => {
+  const tagName = selector.replace(/\.([^.]+)/g, (match, className) => {
     classNames.push(className);
     return '';
   });

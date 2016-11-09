@@ -50,11 +50,19 @@
   margin: auto 2em;
 }
 
-.CardHeaderLogo {
-  flex-basis: 1.5em;
-  height: 1.5em;
+
+.CardBody, .CardLogo {
+  position: relative;
+  width: 20em;
+  height: 20em;
 }
 
-.CardLogo {
-  width: 20em;
+.CardLogo__Text {
+  text-align: center;
+  font-weight: bold;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%) rotate(45deg);
+  font-size: 2em;
 }

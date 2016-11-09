@@ -1,6 +1,7 @@
 const gulp = require('gulp');
 const eslint = require('gulp-eslint');
 const webserver = require('gulp-webserver');
+const PORT = process.env.PORT || '15295';
 
 const LINT_PATH = ['src/**/*.js', '!src/**/templates/*'];
 
@@ -12,10 +13,11 @@ gulp.task('lint', () => {
 });
 
 gulp.task('webserver', () => {
+  console.error('Listening on http://localhost:' + PORT + '/');
   gulp.src('.')
     .pipe(webserver({
       directoryListing: true,
-      port: 15295,
+      port: PORT,
     }));
 });
 
