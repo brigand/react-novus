@@ -55,6 +55,7 @@
   position: relative;
   width: 20em;
   height: 20em;
+  display: block;
 }
 
 .CardLogo__Text {

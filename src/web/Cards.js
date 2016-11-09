@@ -54,6 +54,11 @@ module.exports = class Cards extends React.Component {
       h(Section, {title: 'Server Rendering', description: text.serverRender},
         makeCard('serverRenderEnabled', 'yes', 'Yes', text.yesServerRendering),
         makeCard('serverRenderEnabled', 'none', 'No', text.noServerRendering)
+      ),
+      h(Section, {title: 'Redux Middleware', description: text.reduxMiddleware},
+        makeCard('reduxMiddleware', 'thunk', 'redux-thunk', text.reduxThunk),
+        makeCard('reduxMiddleware', 'promise', 'redux-promise', text.reduxPromise),
+        makeCard('reduxMiddleware', 'saga', 'redux-saga', text.reduxSaga)
       )
     );
   }

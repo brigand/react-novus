@@ -9,6 +9,7 @@ exports.presets.default = {
   typeSystem: 'none',
   immutableTool: 'none',
   serverRenderEnabled: 'none',
+  reduxMiddleware: 'thunk',
 };
 
 const makeLogo = filename => `src/web/logos/${filename}`;
@@ -16,4 +17,5 @@ const makeLogo = filename => `src/web/logos/${filename}`;
 exports.logos = {
   webpack: makeLogo('webpack.png'),
   rollup: makeLogo('rollup.jpg'),
+  redux: makeLogo('redux.svg'),
 };
