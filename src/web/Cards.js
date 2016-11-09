@@ -18,7 +18,7 @@ module.exports = class Cards extends React.Component {
             {[key]: value}
           );
           this.props.onChange(obj);
-        }
+        },
       });
     };
 

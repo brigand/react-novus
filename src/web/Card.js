@@ -10,8 +10,7 @@ module.exports = class Card extends React.Component {
     return h('div.Card', {onClick},
       h('div.CardHeader', null,
         h('div.CardHeaderCheckbox', null, this.renderCheckboxContent()),
-        h('div.CardHeaderTitle', null, this.props.title),
-        h('div.CardHeaderLogo', null, this.renderCardHeaderLogo())
+        h('div.CardHeaderTitle', null, this.props.title)
       ),
       h('div.CardBody', null,
         h('img.CardLogo', {src: constants.logos[this.props.id]}),
@@ -25,14 +24,11 @@ module.exports = class Card extends React.Component {
       ? h('div.CardHeaderCheckboxSelected', null)
       : h('div.CardHeaderCheckboxEmpty', null);
   }
-
-  renderCardHeaderLogo() {
-    return h('div', null, 'logo');
-  }
 };
 
 module.exports.propTypes = {
   title: React.PropTypes.string.isRequired,
+  id: React.PropTypes.string.isRequired,
   description: React.PropTypes.string.isRequired,
   checked: React.PropTypes.bool.isRequired,
   onClick: React.PropTypes.func.isRequired,

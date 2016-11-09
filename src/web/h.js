@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 const h = (selector, props, ...children) => {
   if (typeof selector !== 'string') {
     return React.createElement(selector, props, ...children);
@@ -17,7 +18,7 @@ const h = (selector, props, ...children) => {
   if (classNames.length) {
     if (!newProps) newProps = {};
 
-    newProps = Object.assign({}, props, {className: classNames.join(' ')})
+    newProps = Object.assign({}, props, {className: classNames.join(' ')});
   }
   return React.createElement(tagName, newProps, ...children);
 };

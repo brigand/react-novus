@@ -5,7 +5,7 @@ exports.presets.default = {
 
 };
 
-const makeLogo = (filename) => `src/web/logos/${filename}`;
+const makeLogo = filename => `src/web/logos/${filename}`;
 
 exports.logos = {
   webpack: makeLogo('webpack.png'),
