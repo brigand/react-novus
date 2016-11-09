@@ -37,6 +37,15 @@ module.exports = class Cards extends React.Component {
         makeCard('componentStyle', 'function', 'Functions', text.functionStyle),
         makeCard('componentStyle', 'recompose', 'Functions with Recompose', text.recomposeStyle)
       ),
+      h(Section, {title: 'CSS Tool', description: text.cssTool},
+        makeCard('cssTool', 'scss', 'SCSS', text.scss),
+        makeCard('cssTool', 'post', 'Post CSS', text.postCSS),
+        makeCard('cssTool', 'none', 'None', text.css)
+      ),
+      h(Section, {title: 'CSS Modules', description: text.cssModules},
+        makeCard('cssModules', 'yes', 'Yes', text.yesCSSModules),
+        makeCard('cssModules', 'none', 'None', text.noCSSModules)
+      ),
       h(Section, {title: 'Unit Tests', description: text.unitTests},
         makeCard('testTool', 'jest', 'Jest', text.jest),
         makeCard('testTool', 'mocha', 'Mocha', text.mocha),

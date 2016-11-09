@@ -5,6 +5,8 @@ exports.presets.default = {
   buildTool: 'webpack',
   stateTool: 'redux',
   componentStyle: 'class',
+  cssTool: 'scss',
+  cssModulesEnabled: 'none',
   testTool: 'jest',
   typeSystem: 'none',
   immutableTool: 'none',
